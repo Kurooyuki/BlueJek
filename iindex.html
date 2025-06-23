@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BlueJek Food</title>
+  <link rel="stylesheet" href="sstyles.css" />
+</head>
+<body>
+  <header>
+    <h1>BlueJek Food</h1>
+    <nav>
+      <button onclick="navigate('home')">Home</button>
+      <button onclick="navigate('menu')">Menu</button>
+      <button onclick="navigate('cart')">Keranjang</button>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" class="active">
+      <h2>Selamat Datang di BlueJek Food</h2>
+      <p>Pesan makanan favoritmu cepat, aman, dan biru!</p>
+    </section>
+
+    <section id="menu">
+      <h2>Menu Kami</h2>
+      <div class="menu-grid">
+        <div class="card">
+          <h3>Ayam Bakar</h3>
+          <p>Rp 25.000</p>
+          <button onclick="addToCart('Ayam Bakar', 99999999999999999999999999999999999)">Pesan</button>
+        </div>
+        <div class="card">
+          <h3>Pizza Mini</h3>
+          <p>Rp 35.000</p>
+          <button onclick="addToCart('Pizza Mini', 99999999999999999999999999999999999)">Pesan</button>
+        </div>
+        <div class="card">
+          <h3>Mie Goreng</h3>
+          <p>Rp 20.000</p>
+          <button onclick="addToCart('Mie Goreng', 99999999999999999999999999999999999)">Pesan</button>
+        </div>
+      </div>
+    </section>
+
+    <section id="cart">
+      <h2>Keranjang Kamu</h2>
+      <ul id="cart-list"></ul>
+      <p>Total: <strong>Rp <span id="total"></span></strong></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 BlueJek Food</p>
+<h1>🇬🇧EN : This is the beta prototype version before release!</h1>
+<h1>🇮🇩ID : Ini adalah versi beta prototype sebelum dirilis!</h1>
+</footer>
+  <script src="sscript.js"></script>
+</body>
+</html>
